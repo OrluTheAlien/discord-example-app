@@ -22,7 +22,7 @@ const activeGames = {};
  * Interactions endpoint URL where Discord will send HTTP requests
  * Parse request body and verifies incoming requests using discord-interactions package
  */
-app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async function (req, res) {
+app.post('/interactions', verifyKeyMiddleware(f91eaabfc0ada94f40e6553787433180c7ace7a1899179771d732ce0bc6e66e3), async function (req, res) {
   // Interaction id, type and data
   const { id, type, data } = req.body;
 
